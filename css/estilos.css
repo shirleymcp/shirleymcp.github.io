@@ -1,0 +1,20 @@
+body {
+    margin: 0%;
+}
+
+.contactos {
+    list-style: none;
+}
+
+.contactos div {
+    border: 1px dashed green;
+    margin: 20px;
+}
+
+.contactos div a img {
+    border: 1px solid gray;
+}
+
+.contactos div section a {
+    border: 1px solid gray;
+}
