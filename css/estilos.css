@@ -1,20 +1,75 @@
-body {
-    margin: 0%;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-.contactos {
+body {
+    background-color: #bdc3c7;
+}
+
+#titulo {
+    margin-top: 3%;
+    text-align: center;
+}
+
+nav {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
     list-style: none;
 }
 
-.contactos div {
-    border: 1px dashed green;
-    margin: 20px;
+#menu li a {
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
 }
 
-.contactos div a img {
-    border: 1px solid gray;
+#menu li a:hover {
+    background-color: #ffffff;
 }
 
-.contactos div section a {
-    border: 1px solid gray;
+#menu>li {
+    float: left;
+}
+
+#menu li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+#menu li:hover>ul {
+    display: block;
+}
+
+nav {
+    margin-bottom: 5%;
+}
+
+#seccion {
+    margin: 5%;
+}
+
+#seccion li {
+    display: inline-block;
+    width: 25%;
+    border: solid #34495e 2px;
+    padding: 1%;
+    margin: 2%;
+}
+
+#seccion li a {
+    margin: 3%;
+}
+
+.contacto {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    margin-top: 20%;
 }
