@@ -3,255 +3,200 @@
 
     <head>
         <meta charset="UTF‐8">
-            <meta name="description" content="En esta página existe información de mis contactos">
+            <meta name="description" content="En esta página">
             <title>Mis contactos</title>
-            <script src="app.js"></script>
-                <link rel="stylesheet" href="css/estilos.css">
+            <link rel="ico" href="imágenes/favicon.ico">
+            <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/estilos.css">
+            <link rel="stylesheet" href="fontawesome/css/all.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
 
-    <body>
-        <header>
-            <h1 id="titulo">MI PÁGINA</h1>
+    <body data-spy="scroll" data-target="#navbar" data-offset="72" class="position-relative">
+
+        <header class="fixed-top page-header">
+            <div class="container-fluid container-fluid-max">
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#home">ShirleyMishell</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                 <span class="navbar-toggler-icon"></span>
+                            </button>
+                    <div class="collapse navbar-collapse justify-content-lg-between" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#process">Todos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#featured-destinations">Familia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#popular-destinations">Colegio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#request-quote">Universidad</a>
+                            </li>
+                        </ul>
+                        <div class="text-white">
+                            <a href="tel:1234567890" class="mr-2">
+                                <i class="fas fa-phone"></i>
+                                <div class="d-none d-xl-inline">948363658</div>
+                            </a>
+                            <a href="mailto:info@honeydreams.com">
+                                <i class="fas fa-envelope"></i>
+                                <div class="d-none d-xl-inline">schinchep15@unc.edu.pe</div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </header>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href=" index.html ">Inicio</a>
-                </li>
-                <li>
-                    <a href="perfil.html ">Perfil</a>
-                </li>
-                <li>
-                    <a href="contactos.html ">Contactos</a>
-                </li>
-                <li>
-                    <a href="lugares.html ">Lugares turísticos</a>
-                </li>
-                <li>
-                    <a href="#">Ingeniería Web</a>
-                    <ul>
-                        <li>
-                            <a href="laboratorio.html">Laboratorio</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        &nbsp
-        <div id="d">
-            <ul id="menu">
-                <li>
-                    <a href="todos.html">
-                        Todos los contactos
-                        <img src="imágenes/iconTodos.ico" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="familia.html">
-                        Familia
-                        <img src="imágenes/iconFamilia.ico" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="colegio.html">
-                        Colegio
-                        <img src="imágenes/iconColegio.ico" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="universidad.html">
-                        Universidad
-                        <img src="imágenes/iconUNC.ico" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Grupos</a>
-                    <ul>
-                        <li>
-                            <a href="gBH.html">
-                                Black Hole
-                                <img src="imágenes/iconBH.ico" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="gClubUNC.html">
-                                Club UNC
-                                <img src="imágenes/iconBasquet.ico" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        &nbsp;
-        <section id="seccion">
-            <ul>
-                <li>
 
-                    <a href="lugares.html">
-                        <img src="imágenes/Familia/Mili.jpg" alt="Mili" class="contacto">
-                    </a>
-                    <a href="lugares.html">Milagros Cisneros Pérez</a>
 
-                </li>
-                <li>
-                    <a href="">
-                        <img src="imágenes/Colegio/Sandra.jpg" alt="Sandra" class="contacto">
-                    </a>
-                    <a href="">Sandra Pereyra Chávez</a>
-                </li>
-                <li>
 
-                    <a href="lugares.html">
-                        <img src="imágenes/Familia/Mami.jpg" alt="Mami" class="contacto">
-                    </a>
-                    <a href="lugares.html">Juana Pérez Saldaña</a>
 
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Familia/Jhery.jpg" alt="Jhery" class="contacto">
-                        </a>
-                        <a href="">Jheremy Valera Pérez</a>
+        <section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(imágenes/Amigos.jpg)">
+            <div class="container-fluid container-fluid-max">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <h1 class="text-white">Los amigos son compañeros de viaje que nos ayudan a avanzar por el camino de una vida más feliz</h1>
+                        <div class="mt-3">
+                            <a class="btn bg-red text-white mr-2" href="index.html" role="button">Inicio</a>
+                            <a class="btn bg-red text-white" href="laboratorio.html" role="button">Laboratorio</a>
+
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Grupos/Club UNC/Dorita.jpg" alt="Dorita" class="contacto">
-                        </a>
-                        <a href=""> Dorita Saavedra Tarrillo</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Universidad/Wilmer.jpg" alt="Wilmer" class="contacto">
-                        </a>
-                        <a href="">Wilmer León Chávez</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Grupos/Club UNC/Edith.jpg" alt="Edith" class="contacto">
-                        </a>
-                        <a href="">Edith Huatay</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Universidad/Elsa.jpg" alt="Elsa" class="contacto">
-                        </a>
-                        <a href="">Elsa Bacón Aliaga</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Universidad/Frank.jpg" alt="Frank" class="contacto">
-                        </a>
-                        <a href="">Frank Tirado Muñoz</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Familia/Jhesteen.jpg" alt="Jhesteen" class="contacto">
-                        </a>
-                        <a href="">Jhesteen Valera Pérez</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Grupos/Club UNC/Areli.jpg" alt="Areli" class="contacto">
-                        </a>
-                        <a href="">Areli Gómez</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Familia/Darick.jpg" alt="Darick" class="contacto">
-                        </a>
-                        <a href="">Darick Pérez Briseño</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Colegio/Lorena.jpg" alt="Lorena" class="contacto">
-                        </a>
-                        <a href="">Lorena Walter Villegas</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Familia/Charo.jpg" alt="Charo" class="contacto">
-                        </a>
-                        <a href="">Rosalía Pérez Saldaña</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Universidad/Jhovany.jpg" alt="Jhovany" class="contacto">
-                        </a>
-                        <a href="">Jhovany Alcántara Lucano</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Colegio/Peggy.jpg" alt="Peggy" class="contacto">
-                        </a>
-                        <a href="">Peggy Vergara Tasilla</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Grupos/Club UNC/Thalía.jpg" alt="Thalía" class="contacto">
-                        </a>
-                        <a href="">Thalía Chávez Cotrina</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="lugares.html">
-                            <img src="imágenes/Familia/Yaji.jpg" alt="Yaji" class="contacto">
-                        </a>
-                        <a href="">Mishell Yajaira Chinche Pérez</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Universidad/Elbert.jpg" alt="Elbert" class="contacto">
-                        </a>
-                        <a href=""> Elbert Calderón Carranza</a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="imágenes/Grupos/Club UNC/Lizeth.jpg" alt="Lizeth" class="contacto">
-                        </a>
-                        <a href=""> Lizeth Machaca</a>
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
-        <p></p>
 
-        <footer>
-            <em>Derechos reservados | Shirley &copy; 2019</em>
-        </footer>
 
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="1" data-toggle="modal" data-title="" data-image="imágenes/Colegio/Sandra.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="imágenes/Colegio/Sandra.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="imágenes/Familia/Darick.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="imágenes/Familia/Darick.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="imágenes/Grupos/Club UNC/Areli.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="imágenes/Grupos/Club UNC/Areli.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1" data-image="imágenes/Familia/Yaji.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="imágenes/Familia/Yaji.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="imágenes/Universidad/Elbert.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="imágenes/Universidad/Elbert.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="imágenes/Familia/Mami.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="imágenes/Familia/Mami.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="imágenes/Universidad/Wilmer.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="imágenes/Universidad/Wilmer.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="imágenes/Colegio/Peggy.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="imágenes/Colegio/Peggy.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="imágenes/Colegio/Milagros.jpg" data-target="#image-gallery">
+                            <img class="img-thumbnail" src="imágenes/Colegio/Milagros.jpg" alt="Another alt text">
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="image-gallery-title"></h4>
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                                        </button>
+                            </div>
+                            <div class="modal-body">
+                                <img id="image-gallery-image" class="img-responsive col-md-10" src="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <footer class="footer bg-light ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-lg-6 h-100 text-center text-lg-left my-auto ">
+                            <ul class="list-inline mb-2 ">
+                                <li class="list-inline-item ">
+                                    <a href="# ">About</a>
+                                </li>
+                                <li class="list-inline-item ">&sdot;</li>
+                                <li class="list-inline-item ">
+                                    <a href="# ">Contact</a>
+                                </li>
+                                <li class="list-inline-item ">&sdot;</li>
+                                <li class="list-inline-item ">
+                                    <a href="# ">Terms of Use</a>
+                                </li>
+                                <li class="list-inline-item ">&sdot;</li>
+                                <li class="list-inline-item ">
+                                    <a href="# ">Privacy Policy</a>
+                                </li>
+                            </ul>
+                            <p class="text-muted small mb-4 mb-lg-0 ">Shirley &copy;2019. Todos los derechos reservados.</p>
+                        </div>
+                        <div class="col-lg-6 h-100 text-center text-lg-right my-auto ">
+                            <ul class="list-inline mb-0 ">
+                                <li class="list-inline-item mr-3 ">
+                                    <a href="# ">
+                                        <i class="fab fa-facebook fa-2x fa-fw "></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-3 ">
+                                    <a href="# ">
+                                        <i class="fab fa-twitter-square fa-2x fa-fw "></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item ">
+                                    <a href="# ">
+                                        <i class="fab fa-instagram fa-2x fa-fw "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
+            <script src="bootstrap/js/bootstrap.min.js "></script>
+            <script src="javascrip/animacion.js "></script>
+            <script src="javascrip/animContactos.js "></script>
     </body>
 
     </html>

@@ -1,75 +1,210 @@
-* {
-    margin: 0px;
-    padding: 0px;
+:root {
+    --lightblue: #f6f9fc;
+    --red: #9e1643;
 }
 
-body {
-    background-color: #bdc3c7;
+a,
+a:hover {
+    color: inherit;
 }
 
-#titulo {
-    margin-top: 3%;
-    text-align: center;
+a:hover {
+    text-decoration: none;
 }
 
-nav {
-    width: 50%;
-    font-family: Arial, Helvetica, sans-serif;
+.bg-lightblue {
+    background: var(--lightblue);
+}
+
+.bg-red {
+    background: var(--red);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.container-fluid-max {
+    max-width: 1440px;
+}
+
+.cover {
+    background: no-repeat center/cover;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+projects-section {
+    padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+    padding: 2rem;
 }
 
 ul {
     list-style: none;
 }
 
-#menu li a {
-    text-decoration: none;
-    padding: 15px 25px;
-    display: block;
+@media (min-width: 992px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem var(--red);
+    }
 }
 
-#menu li a:hover {
-    background-color: #ffffff;
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%;
 }
 
-#menu>li {
-    float: left;
+@media (min-width: 992px) {
+    .projects-section .project-text {
+        padding: 5rem;
+    }
+    .projects-section .project-text hr {
+        border-color: var(--red);
+        border-width: .25rem;
+        width: 30%;
+    }
 }
 
-#menu li ul {
-    display: none;
+
+/* MEDIUM SCREENS */
+
+@media screen and (max-width: 991px) {
+    .page-header {
+        background: var(--red);
+    }
+}
+
+
+/* SMALL SCREENS */
+
+@media screen and (max-width: 767px) {
+    .page-footer .footer-child {
+        text-align: center;
+    }
+}
+
+
+/* SCROLL ANIMATIONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scroll .page-header {
+    background: var(--red);
+}
+
+.scroll .hero {
+    transform: scale(0.98);
+}
+
+
+/* HEADER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.page-header {
+    transition: background 0.5s ease-in-out;
+}
+
+.page-header .navbar {
+    padding: 1rem 0;
+}
+
+.page-header .navbar-toggler {
+    /* the variable is inherited from BS4 built-in variables */
+    border-color: var(--white);
+}
+
+
+/* BANNER SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hero {
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero::after {
+    content: "";
     position: absolute;
-    min-width: 140px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%);
 }
 
-#menu li:hover>ul {
+.hero .container-fluid {
+    z-index: 10;
+}
+
+
+/* POPULAR DESTINATIONS SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.popular-destinations figure {
+    margin-bottom: 30px;
+}
+
+.popular-destinations figcaption {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.popular-destinations img {
+    filter: grayscale(100%) blur(3px);
+    transition: transform 0.5s, filter 0.75s;
+}
+
+.popular-destinations a:hover img {
+    transform: scale(1.25);
+    filter: none;
+}
+
+
+/* PAGE FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.page-footer .footer-links {
+    text-align: right;
+}
+
+.footer {
+    margin: 3em;
+}
+
+
+/*CONTACTOS*/
+
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.img-thumbnail {
+    width: 8em;
+    height: 8em;
+}
+
+.modal-body {
+    width: 20em;
+    height: 20em;
+}
+
+#image-gallery .modal-footer {
     display: block;
 }
 
-nav {
-    margin-bottom: 5%;
-}
-
-#seccion {
-    margin: 5%;
-}
-
-#seccion li {
-    display: inline-block;
-    width: 25%;
-    border: solid #34495e 2px;
-    padding: 1%;
-    margin: 2%;
-}
-
-#seccion li a {
-    margin: 3%;
-}
-
-.contacto {
-    width: 100px;
-    height: 100px;
-}
-
-footer {
-    margin-top: 20%;
+.thumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
